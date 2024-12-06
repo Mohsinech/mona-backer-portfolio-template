@@ -2,13 +2,21 @@ import Link from "next/link";
 import styles from "./back.module.css";
 
 const BackToTop = ({ href, label }) => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Link
-      href={!href ? "" : href}
-      className={`${styles.link} text-gray-200" font-montreal text-xs text-gray-200`}
+      href={href || "#"}
+      onClick={scrollToTop}
+      className={`${styles.link} font-montreal text-xs text-gray-200`}
     >
       <p>{label}</p>
-      <div className={`${styles.line} h-[2px] w-full bg-white/30`}></div>
     </Link>
   );
 };

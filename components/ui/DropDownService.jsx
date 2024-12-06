@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 const DropDownService = ({
@@ -17,27 +18,27 @@ const DropDownService = ({
   const content = useRef();
 
   useEffect(() => {
-    const animationDuration = 0.6;
+    const animationDuration = 1;
 
     if (isOpen) {
       gsap.to(content.current, {
         opacity: 1,
         maxHeight: 1000,
         duration: animationDuration,
-        ease: "circ.in",
+        ease: "power2.in",
       });
     } else {
       gsap.to(content.current, {
         opacity: 0,
         maxHeight: 0,
         duration: animationDuration,
-        ease: "circ.out",
+        ease: "power2.out",
       });
     }
   }, [isOpen]);
 
   return (
-    <div className="flex h-fit w-full flex-col gap-4">
+    <div className="relative flex h-fit w-full flex-col gap-4">
       <div
         className="w-full cursor-pointer border-b-1 border-gray-300 pb-3"
         onClick={handleOpen}

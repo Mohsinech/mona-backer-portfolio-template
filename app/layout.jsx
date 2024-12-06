@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>Mona Backer — Photographer & art direction</title>
-        <link rel="icon" type="icon" href="#" />
+        <link rel="icon" type="icon" href="./favicon.ico" />
       </head>
       <body>
         <Header />

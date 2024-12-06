@@ -63,19 +63,6 @@ export const DropdownData = [
     btn4: "Learning",
     btn5: "Portfolio",
   },
-  {
-    id: 4,
-    serviceName: "04 — Videography.",
-    labelOne: "Label one",
-    labelOneDesc:
-      "         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas delectus quod dolorum blanditiis rerum deserunt amet dolorem quibusdam. Obcaecati, dolore.",
-    labelTwo: "Label two",
-    btn1: "Videography",
-    btn2: "Documentary",
-    btn3: "Cenima",
-    btn4: "Cultural",
-    btn5: "Creative",
-  },
 ];
 
 // Fast Maruqee label
@@ -134,26 +121,63 @@ export const AboutLinks = [
 export const TestimonialData = [
   {
     id: 1,
-    icon: "",
-    name: "Alice Thomson",
-    userName: "@alice_thomson_20",
+    fallback: "AT",
+    image: "/assets/images/user_1.jpg",
+    icon: "/assets/icons/twitter.png",
+
+    name: "Alex Thomson",
+    userName: "@alix_thomson_20",
     description:
-      "I love your work, you're one of the best photragher i ever meet.",
+      "I love your work! You're truly one of the best photographers I've ever met. Every photo you capture tells a story, and the way you bring out the emotions in your subjects is incredible. Your attention to detail and creative vision is unmatched!",
   },
   {
     id: 2,
-    icon: "",
-    name: "Andrei backer",
-    userName: "@andreii_",
+    fallback: "LS",
+    image: "/assets/images/user_2.jpg",
+    icon: "/assets/icons/twitter.png",
+    name: "Leila Simon",
+    userName: "@leila_sim10",
     description:
-      "I love your work, you're one of the best photragher i ever meet.",
+      "Working with you was an amazing experience! Your ability to capture the perfect moment is something I haven’t seen in any other photographer. The session was smooth, and the final photos blew me away. I can’t wait to work with you again soon.",
   },
   {
     id: 3,
-    icon: "",
-    name: "Kaylie walker",
-    userName: "@Kaylie_wk",
+    fallback: "CL",
+    image: "/assets/images/user_3.jpg",
+    name: "Catherine Lee",
+    icon: "/assets/icons/twitter.png",
+    userName: "@cath_lee_photography",
     description:
-      "I love your work, you're one of the best photragher i ever meet.",
+      "I can’t recommend you enough! Your photos speak for themselves – they're full of life, creativity, and emotion. You made me feel so comfortable during the shoot, and I was genuinely impressed with how professional and dedicated you were throughout the process.",
+  },
+  {
+    id: 4,
+    fallback: "DM",
+    image: "/assets/images/user_4.jpg",
+    icon: "/assets/icons/twitter.png",
+    name: "Dina Martinez",
+    userName: "@dinamar_art",
+    description:
+      "What a fantastic experience! The way you capture light and shadow makes each photo look like a piece of art. I was really impressed by your professionalism and the way you guided me during the shoot. The results were nothing short of amazing.",
+  },
+  {
+    id: 5,
+    fallback: "EP",
+    image: "/assets/images/user_5.jpg",
+    icon: "/assets/icons/twitter.png",
+    name: "Parker johnson",
+    userName: "@parker_johnson_studio",
+    description:
+      "Your work is beyond exceptional. Not only are you incredibly talented, but your passion for photography is evident in every shot you take. I was thrilled with how the photos turned out, and they exceeded all my expectations. I will definitely be coming back for more!",
+  },
+  {
+    id: 6,
+    fallback: "FJ",
+    image: "/assets/images/user_6.jpg",
+    icon: "/assets/icons/twitter.png",
+    name: "Fernanda ramirez",
+    userName: "@fernanda_ramirez_",
+    description:
+      "Working with you was an absolute pleasure. You have a unique ability to make people feel at ease, and the photos reflect that natural connection. Your attention to detail and ability to bring out the best in each person is truly remarkable. Thank you for capturing these priceless moments.",
   },
 ];
