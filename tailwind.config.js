@@ -52,6 +52,11 @@ module.exports = {
       fontSize: {
         md: "16px",
       },
+      screens: {
+        blg: "1025px",
+        bmd: "821px",
+        xs: "390px",
+      },
     },
   },
   plugins: [],

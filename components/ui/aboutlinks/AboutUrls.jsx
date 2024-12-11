@@ -2,13 +2,9 @@ import React from "react";
 import Link from "next/link";
 import styles from "./about.module.css";
 
-const AboutUrls = ({ href, label, handleOpen }) => {
+const AboutUrls = ({ href, label }) => {
   return (
     <Link
-      onClick={(e) => {
-        e.preventDefault();
-        handleOpen();
-      }}
       href={!href ? "" : href}
       className={`${styles.link} font-montreal text-sm font-medium text-white`}
     >

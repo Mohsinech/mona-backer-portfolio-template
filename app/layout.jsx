@@ -1,14 +1,13 @@
 "use client";
 
 import "@/styles/globals.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Header from "components/layouts/Header";
 import Lenis from "lenis";
 import Footer from "components/layouts/Footer";
 
 export default function RootLayout({ children }) {
   const lenisRef = useRef(null);
-
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -35,7 +34,7 @@ export default function RootLayout({ children }) {
         <title>Mona Backer — Photographer & art direction</title>
         <link rel="icon" type="icon" href="./favicon.ico" />
       </head>
-      <body>
+      <body className="bg-whity">
         <Header />
         {children}
         <Footer />

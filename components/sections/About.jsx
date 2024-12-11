@@ -4,6 +4,7 @@ import { AboutContent } from "constants/data";
 import Image from "next/image";
 import { AboutLinks } from "constants/data";
 import AboutUrls from "components/ui/aboutlinks/AboutUrls";
+
 const About = ({ isOpen, handleClose }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [startY, setStartY] = useState(0);
@@ -27,23 +28,30 @@ const About = ({ isOpen, handleClose }) => {
   };
 
   useEffect(() => {
-    if (containerRef.current) {
-      containerRef.current.addEventListener("mousedown", handleMouseDown);
+    const container = containerRef.current;
+
+    if (container) {
+      container.addEventListener("mousedown", handleMouseDown);
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseup", handleMouseUp);
 
+      // Cleanup function to remove event listeners
       return () => {
-        containerRef.current.removeEventListener("mousedown", handleMouseDown);
+        if (container) {
+          container.removeEventListener("mousedown", handleMouseDown);
+        }
         document.removeEventListener("mousemove", handleMouseMove);
         document.removeEventListener("mouseup", handleMouseUp);
       };
     }
-  }, [isDragging, startY, scrollTop]);
+  }, [isDragging, startY, scrollTop]); // Dependencies ensure the effect reruns when dragging state changes
 
   return (
     <section
       className={`about fixed right-0 top-0 z-[9999] flex h-screen flex-col gap-20 bg-dark p-8 transition-all duration-500 ${
-        isOpen ? "w-fifty opacity-100" : "w-0 opacity-0"
+        isOpen
+          ? "w-fifty opacity-100 max-blg:w-seventy max-sm:w-full"
+          : "-right-8 w-0 opacity-0"
       }`}
     >
       {/* 1 */}
@@ -68,7 +76,7 @@ const About = ({ isOpen, handleClose }) => {
       {/* 2 */}
       <div
         ref={containerRef}
-        className="flex cursor-grab flex-col gap-14 overflow-hidden"
+        className="flex cursor-grab flex-col gap-14 overflow-scroll overflow-x-hidden"
         style={{
           maxHeight: "calc(100vh - 80px)",
           paddingRight: "15px",

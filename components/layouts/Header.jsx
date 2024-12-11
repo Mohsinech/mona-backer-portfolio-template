@@ -7,15 +7,15 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between bg-whity px-4 py-2">
       <Link href="/">
-        <h1 className="font-montreal font-medium">Mona Baker</h1>
+        <h1 className="font-montreal font-medium max-sm:text-lg">Mona Baker</h1>
       </Link>
-      <div className="flex flex-col">
+      <div className="flex flex-col max-sm:hidden">
         <p className="font-montreal text-sm font-medium">London, Uk</p>
         <p className="font-montreal text-sm font-medium">
           Photographer & Art Direction
         </p>
       </div>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-8 max-sm:hidden">
         {socials.map((link) => (
           <NavList key={link.social} {...link} />
         ))}

@@ -18,7 +18,7 @@ export default function Home() {
   }
 
   return (
-    <div className="relative bg-whity">
+    <>
       <main
         className={`relative transition-all duration-500 ${
           isOpen ? "pointer-events-none blur-sm" : ""
@@ -31,6 +31,6 @@ export default function Home() {
         <CtaSection />
       </main>
       <About isOpen={isOpen} handleClose={handleOpen} />
-    </div>
+    </>
   );
 }

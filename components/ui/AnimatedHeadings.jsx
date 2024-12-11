@@ -43,13 +43,13 @@ const AnimatedHeadings = () => {
   return (
     <div
       ref={content}
-      className="flex w-full flex-col items-center justify-center py-14"
+      className="flex w-full flex-col items-center justify-center py-14 max-sm:py-10"
     >
       {["Capturing any", "moment as a", "Unique Story."].map((text, index) => (
         <div key={index} className="relative overflow-hidden">
           <h1
             ref={addToRefs}
-            className="inline-block text-center font-nohemi text-8xl font-medium leading-[6rem] text-dark"
+            className="max-xs:text-5xl inline-block text-center font-nohemi text-8xl font-medium leading-[6rem] text-dark max-bmd:text-7xl max-sm:text-[50px]"
           >
             {index === 0 && <sup className="text-dark">‟</sup>}
             {text}

@@ -10,7 +10,7 @@ const QuickNavAbout = ({ href, label, handleOpen }) => {
         handleOpen();
       }}
       href={!href ? "" : href}
-      className={`${styles.link} font-montreal text-sm font-medium text-dark`}
+      className={`${styles.link} max-bmd:text-md font-montreal text-sm font-medium text-dark`}
     >
       <p>{label}</p>
       <div className={`${styles.line} h-[2px] w-full bg-dark/30`}></div>
