@@ -3,7 +3,8 @@ import DataContent from "components/ui/DataContent";
 import { AboutContent } from "constants/data";
 import Image from "next/image";
 import { AboutLinks } from "constants/data";
-import AboutUrls from "components/ui/aboutlinks/AboutUrls";
+import AboutUrls from "components/ui/AboutUrls/AboutUrls";
+import styles from "./about.module.css";
 
 const About = ({ isOpen, handleClose }) => {
   const [isDragging, setIsDragging] = useState(false);
@@ -35,7 +36,6 @@ const About = ({ isOpen, handleClose }) => {
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseup", handleMouseUp);
 
-      // Cleanup function to remove event listeners
       return () => {
         if (container) {
           container.removeEventListener("mousedown", handleMouseDown);
@@ -44,29 +44,28 @@ const About = ({ isOpen, handleClose }) => {
         document.removeEventListener("mouseup", handleMouseUp);
       };
     }
-  }, [isDragging, startY, scrollTop]); // Dependencies ensure the effect reruns when dragging state changes
+  }, [isDragging, startY, scrollTop]);
 
   return (
     <section
-      className={`about fixed right-0 top-0 z-[9999] flex h-screen flex-col gap-20 bg-dark p-8 transition-all duration-500 ${
+      className={`${styles.about_section} transition-all duration-500 ${
         isOpen
           ? "w-fifty opacity-100 max-blg:w-seventy max-sm:w-full"
           : "-right-8 w-0 opacity-0"
       }`}
     >
       {/* 1 */}
-      <div className="flex w-full items-center justify-between">
-        <div className="relative flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border-1 border-white">
+      <div className={styles.first_col}>
+        <div className={styles.image_container}>
           <Image
             src="/assets/images/avatar.jpg"
             alt="Mona Backer"
             layout="fill"
-            className="absolute h-full w-full rounded-full object-cover"
+            className={styles.image}
           />
         </div>
-
         <button
-          className="w-fit rounded-full border-1 border-gray-300 px-4 py-2 font-nohemi text-lg tracking-wide text-white transition duration-300 hover:bg-white hover:text-dark"
+          className={`transition duration-300 ${styles.close_btn}`}
           onClick={handleClose}
         >
           Close
@@ -76,7 +75,7 @@ const About = ({ isOpen, handleClose }) => {
       {/* 2 */}
       <div
         ref={containerRef}
-        className="flex cursor-grab flex-col gap-14 overflow-scroll overflow-x-hidden"
+        className={styles.main_container}
         style={{
           maxHeight: "calc(100vh - 80px)",
           paddingRight: "15px",
@@ -85,10 +84,10 @@ const About = ({ isOpen, handleClose }) => {
         {AboutContent.map((content) => (
           <DataContent key={content.id} {...content} />
         ))}
-        <button className="w-fit rounded-full border-1 border-gray-300 px-4 py-2 font-nohemi text-lg tracking-wide text-white transition duration-300 hover:bg-white hover:text-dark">
+        <button className={`${styles.book_button} transition duration-300`}>
           Book a free call
         </button>
-        <div className="flex items-center gap-4">
+        <div className={styles.about_socials}>
           {AboutLinks.map((link) => (
             <AboutUrls key={link.label} {...link} />
           ))}

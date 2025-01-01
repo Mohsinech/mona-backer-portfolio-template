@@ -3,30 +3,31 @@ import Link from "next/link";
 import { socials } from "constants/data";
 import Image from "next/image";
 import NavList from "components/ui/navlist/NavList";
+import styles from "./header.module.css";
 const Header = () => {
   return (
-    <header className="flex items-center justify-between bg-whity px-4 py-2">
+    <header className={styles.header}>
       <Link href="/">
-        <h1 className="font-montreal font-medium max-sm:text-lg">Mona Baker</h1>
+        <h1 className={styles.header_logo}>Mona Baker</h1>
       </Link>
-      <div className="flex flex-col max-sm:hidden">
-        <p className="font-montreal text-sm font-medium">London, Uk</p>
-        <p className="font-montreal text-sm font-medium">
+      <div className={styles.local_career}>
+        <p className={styles.local_career_title}>London, Uk</p>
+        <p className={styles.local_career_title}>
           Photographer & Art Direction
         </p>
       </div>
-      <div className="flex items-center gap-8 max-sm:hidden">
+      <div className={styles.social_links}>
         {socials.map((link) => (
           <NavList key={link.social} {...link} />
         ))}
       </div>
-      <div className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-gray-400 text-sm">
+      <div className={styles.profile_pic}>
         MB
         <Image
           src="/assets/images/avatar.jpg"
           layout="fill"
           alt="profile"
-          className="absolute cursor-pointer rounded-full object-cover"
+          className={styles.pic}
         />
       </div>
     </header>

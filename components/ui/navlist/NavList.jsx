@@ -2,6 +2,7 @@
 
 import styles from "./nav.module.css";
 import Lenis from "lenis";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 const NavList = ({ social, href, offset = 0 }) => {
@@ -30,7 +31,7 @@ const NavList = ({ social, href, offset = 0 }) => {
     const target = document.querySelector(href);
 
     if (target && lenisRef.current) {
-      const targetPosition = target.offsetTop + offset; // Add offset
+      const targetPosition = target.offsetTop + offset;
       lenisRef.current.scrollTo(targetPosition);
     }
   };
@@ -40,7 +41,7 @@ const NavList = ({ social, href, offset = 0 }) => {
       onClick={handleScroll}
       className={`${styles.link} font-montreal text-sm font-medium`}
     >
-      <p>{social}</p>
+      <Link href={href}>{social}</Link>
       <div className={`${styles.line} h-[2px] w-full bg-dark/30`}></div>
     </button>
   );

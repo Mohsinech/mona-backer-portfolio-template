@@ -9,6 +9,7 @@ import Third from "components/work sections/third";
 import Forth from "components/work sections/forth";
 import Fifth from "components/work sections/fifth";
 import AnimatedHeadings from "components/ui/AnimatedHeadings";
+import styles from "./work.module.css";
 
 const Work = () => {
   const container = useRef(null);
@@ -18,11 +19,7 @@ const Work = () => {
   });
 
   return (
-    <section
-      id="work"
-      ref={container}
-      className="relative flex h-full w-full flex-col gap-10"
-    >
+    <section id="work" ref={container} className={styles.work_section}>
       {/* Work sections */}
       <div className="flex flex-col">
         <First scrollYProgress={scrollYProgress} />

@@ -71,3 +71,7 @@
   font-style: normal;
   font-weight: lighter;
 }
+
+.default {
+  opacity: 0;
+}

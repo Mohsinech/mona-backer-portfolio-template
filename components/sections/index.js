@@ -1,8 +1,8 @@
-import Hero from "./Hero";
-import Work from "./Work";
-import About from "./About";
-import Services from "./Services";
-import Testimonials from "./Testimonials";
-import CtaSection from "./CtaSection";
+import Hero from "./hero/Hero";
+import Work from "./work/Work";
+import About from "./about/About";
+import Services from "./services/Services";
+import Testimonials from "./testimonials/Testimonials";
+import CtaSection from "./cta/CtaSection";
 
 export { Hero, About, Work, Services, Testimonials, CtaSection };
