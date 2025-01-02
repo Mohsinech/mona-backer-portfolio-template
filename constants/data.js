@@ -127,6 +127,8 @@ export const TestimonialData = [
 
     name: "Alex Thomson",
     userName: "@alix_thomson_20",
+    userUrl: "#",
+
     description:
       "I love your work! You're truly one of the best photographers I've ever met. Every photo you capture tells a story, and the way you bring out the emotions in your subjects is incredible. Your attention to detail and creative vision is unmatched!",
   },
@@ -137,6 +139,8 @@ export const TestimonialData = [
     icon: "/assets/icons/twitter.png",
     name: "Leila Simon",
     userName: "@leila_sim10",
+    userUrl: "#",
+
     description:
       "Working with you was an amazing experience! Your ability to capture the perfect moment is something I haven’t seen in any other photographer. The session was smooth, and the final photos blew me away. I can’t wait to work with you again soon.",
   },
@@ -147,6 +151,8 @@ export const TestimonialData = [
     name: "Catherine Lee",
     icon: "/assets/icons/twitter.png",
     userName: "@cath_lee_photography",
+    userUrl: "#",
+
     description:
       "I can’t recommend you enough! Your photos speak for themselves – they're full of life, creativity, and emotion. You made me feel so comfortable during the shoot, and I was genuinely impressed with how professional and dedicated you were throughout the process.",
   },
@@ -157,6 +163,8 @@ export const TestimonialData = [
     icon: "/assets/icons/twitter.png",
     name: "Dina Martinez",
     userName: "@dinamar_art",
+    userUrl: "#",
+
     description:
       "What a fantastic experience! The way you capture light and shadow makes each photo look like a piece of art. I was really impressed by your professionalism and the way you guided me during the shoot. The results were nothing short of amazing.",
   },
@@ -167,6 +175,8 @@ export const TestimonialData = [
     icon: "/assets/icons/twitter.png",
     name: "Parker johnson",
     userName: "@parker_johnson_studio",
+    userUrl: "#",
+
     description:
       "Your work is beyond exceptional. Not only are you incredibly talented, but your passion for photography is evident in every shot you take. I was thrilled with how the photos turned out, and they exceeded all my expectations. I will definitely be coming back for more!",
   },
@@ -177,6 +187,8 @@ export const TestimonialData = [
     icon: "/assets/icons/twitter.png",
     name: "Fernanda ramirez",
     userName: "@fernanda_ramirez_",
+    userUrl: "#",
+
     description:
       "Working with you was an absolute pleasure. You have a unique ability to make people feel at ease, and the photos reflect that natural connection. Your attention to detail and ability to bring out the best in each person is truly remarkable. Thank you for capturing these priceless moments.",
   },

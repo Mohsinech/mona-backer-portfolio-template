@@ -1,15 +1,10 @@
 "use client";
 
 import { useScroll } from "framer-motion";
-import gsap from "gsap";
 import { useRef } from "react";
-import First from "components/work sections/first";
-import Second from "components/work sections/second";
-import Third from "components/work sections/third";
-import Forth from "components/work sections/forth";
-import Fifth from "components/work sections/fifth";
-import AnimatedHeadings from "components/ui/AnimatedHeadings";
 import styles from "./work.module.css";
+import { Fifth, First, Forth, Second, Third } from "components/WorkImages";
+import { AnimatedHeadings } from "components/ui";
 
 const Work = () => {
   const container = useRef(null);

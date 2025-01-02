@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import styles from "./time.module.css";
 
 const CurrentTime = () => {
   const [time, setTime] = useState("");
@@ -29,7 +30,7 @@ const CurrentTime = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <p className="font-montreal text-xs text-gray-200">{time}</p>;
+  return <p className={styles.time}>{time}</p>;
 };
 
 export default CurrentTime;

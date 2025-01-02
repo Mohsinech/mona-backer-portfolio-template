@@ -31,10 +31,9 @@
 .heading {
   z-index: 99999;
   color: #fff;
-  font-family: "NOHEMI", sans-serif;
+  font-family: "neue montreal", sans-serif;
   font-size: 5rem;
   line-height: normal;
-  font-weight: 600;
 }
 
 /* Responsive Design */

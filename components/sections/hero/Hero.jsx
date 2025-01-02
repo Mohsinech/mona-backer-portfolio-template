@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import QuickNav from "components/ui/navlist/QuickNav";
 import { aboutData, easyNavigation } from "constants/data";
-import QuickNavAbout from "components/ui/AboutUrls/QuikNavAbout";
 import styles from "./hero.module.css";
+import { QuickNav, QuickNavAbout } from "components/ui";
 
 const Hero = ({ handleOpen }) => {
   return (

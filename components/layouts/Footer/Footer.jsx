@@ -1,6 +1,6 @@
 import AboutUrls from "components/ui/AboutUrls/AboutUrls";
 import BackToTop from "components/ui/BackToTop/BackToTop";
-import CurrentTime from "components/ui/CurrentTime";
+import CurrentTime from "components/ui/Time/CurrentTime";
 import { AboutLinks, FastLabels } from "constants/data";
 import React from "react";
 import styles from "./footer.module.css";

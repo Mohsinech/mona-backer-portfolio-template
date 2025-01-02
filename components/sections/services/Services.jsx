@@ -1,9 +1,9 @@
 "use client";
 
-import DropDownService from "components/ui/DropDownService";
 import { DropdownData } from "constants/data";
 import React, { useState } from "react";
 import styles from "./services.module.css";
+import { DropDownService } from "components/ui";
 
 const Services = () => {
   const [openDropdown, setOpenDropdown] = useState(null);

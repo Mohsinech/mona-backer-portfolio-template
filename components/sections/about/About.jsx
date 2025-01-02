@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import DataContent from "components/ui/DataContent";
 import { AboutContent } from "constants/data";
 import Image from "next/image";
 import { AboutLinks } from "constants/data";
-import AboutUrls from "components/ui/AboutUrls/AboutUrls";
 import styles from "./about.module.css";
+import { AboutUrls, DataContent } from "components/ui";
 
 const About = ({ isOpen, handleClose }) => {
   const [isDragging, setIsDragging] = useState(false);

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styles from "./animate.module.css";
 
 const AnimatedHeadings = () => {
   const content = useRef(null);
@@ -41,19 +42,13 @@ const AnimatedHeadings = () => {
   }, [headings]);
 
   return (
-    <div
-      ref={content}
-      className="flex w-full flex-col items-center justify-center py-14 max-sm:py-10"
-    >
+    <div ref={content} className={styles.animate}>
       {["Capturing any", "moment as a", "Unique Story."].map((text, index) => (
         <div key={index} className="relative overflow-hidden">
-          <h1
-            ref={addToRefs}
-            className="max-xs:text-5xl inline-block text-center font-nohemi text-8xl font-medium leading-[6rem] text-dark max-bmd:text-7xl max-sm:text-[50px]"
-          >
-            {index === 0 && <sup className="text-dark">‟</sup>}
+          <h1 ref={addToRefs} className={styles.heading}>
+            {index === 0 && <sup className={styles.sup}>‟</sup>}
             {text}
-            {index === 2 && <sup className="text-dark">”</sup>}
+            {index === 2 && <sup className={styles.sup}>”</sup>}
           </h1>
         </div>
       ))}

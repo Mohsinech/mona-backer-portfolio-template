@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./maruqee.module.css";
 
 const FastMarqueeLabel = ({ label }) => {
   return (
-    <h3 className="flex items-center gap-4 font-montreal text-xl text-white">
+    <h3 className={styles.marquee}>
       <svg
         overflow="visible"
         width="18px"

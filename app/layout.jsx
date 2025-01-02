@@ -3,9 +3,9 @@
 import "@/styles/globals.css";
 import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
-import Preloader from "components/preloader/Preloader";
 import gsap from "gsap";
 import { Footer, Header } from "components/layouts";
+import Preloader from "components/preloader/Preloader";
 
 export default function RootLayout({ children }) {
   const [isLoading, setIsLoading] = useState(true);

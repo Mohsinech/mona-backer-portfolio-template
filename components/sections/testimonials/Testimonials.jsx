@@ -1,7 +1,7 @@
-import TestimonialsCard from "components/layouts/TestimonialsCard/TestimonialsCard";
 import React from "react";
 import { TestimonialData } from "constants/data";
 import styles from "./testimonials.module.css";
+import { TestimonialsCard } from "components/layouts";
 
 const Testimonials = () => {
   return (

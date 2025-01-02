@@ -1,0 +1,9 @@
+.marquee {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+}

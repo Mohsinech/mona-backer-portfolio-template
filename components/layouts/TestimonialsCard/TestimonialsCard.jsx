@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./card.module.css";
+import Link from "next/link";
 
 const TestimonialsCard = ({
   icon,
@@ -8,6 +9,7 @@ const TestimonialsCard = ({
   name,
   userName,
   description,
+  userUrl,
 }) => {
   return (
     <div
@@ -30,7 +32,10 @@ const TestimonialsCard = ({
           </div>
         </div>
         <div className={styles.twitter_icon}>
-          <Image src={icon} width={25} height={25} alt="Twitter" />
+          {/* Add user post path on twitter */}
+          <Link href={userUrl}>
+            <Image src={icon} width={25} height={25} alt="Twitter" />
+          </Link>
         </div>
       </div>
       <div>
@@ -41,5 +46,3 @@ const TestimonialsCard = ({
 };
 
 export default TestimonialsCard;
-
-// Add a url to twitter icon that go to the user post on tiwtter
