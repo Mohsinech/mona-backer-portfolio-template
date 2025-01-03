@@ -41,7 +41,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Change this with your domaine */}
         <title>Mona Backer — Photographer & Art Direction</title>
+        {/* Add you favicon */}
+        <link rel="icon" type="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Mona Backer is a freelance photographer and art director specializing in creative portrait photography and visual storytelling. Explore her portfolio and contact for bookings."
