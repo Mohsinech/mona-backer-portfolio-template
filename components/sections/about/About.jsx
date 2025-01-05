@@ -49,7 +49,7 @@ const About = ({ isOpen, handleClose }) => {
     <section
       className={`${styles.about_section} transition-all duration-500 ${
         isOpen
-          ? "w-fifty opacity-100 max-blg:w-seventy max-sm:w-full"
+          ? "max-blg:w-[70%] w-[50%] opacity-100 max-sm:w-full"
           : "-right-8 w-0 opacity-0"
       }`}
     >

@@ -11,15 +11,7 @@ const Preloader = ({ onComplete }) => {
   const [currentWord, setCurrentWord] = useState("Hallo");
 
   // Array of themes/words to cycle through
-  const words = [
-    "Memory",
-    "Moments",
-    "Story",
-    "Dreams",
-    "Capture",
-    "Timeless",
-    "Reflections",
-  ];
+  const words = ["Memory", "Moments", "Story", "Dreams", "Capture", "Timeless"];
 
   useEffect(() => {
     // Change the word every 1.5 seconds

@@ -1,5 +1,8 @@
 .line {
   position: relative;
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.3);
+  height: 2px;
 }
 
 .line::before {
@@ -15,6 +18,14 @@
   transform-origin: left;
 }
 
+.link {
+  font-family: "neue montreal", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+
+  color: #171717;
+}
 .link:hover .line::before {
   transform: scaleX(1);
   transform-origin: left;
@@ -23,4 +34,11 @@
 .link .line::before {
   transform: scaleX(0);
   transform-origin: right;
+}
+
+/* Responsive */
+@media (max-width: 821px) {
+  .link {
+    font-size: 1rem;
+  }
 }

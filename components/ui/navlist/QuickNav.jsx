@@ -38,12 +38,9 @@ const QuickNav = ({ label, href, handleOpen }) => {
   };
 
   return (
-    <button
-      onClick={handleScroll}
-      className={`${styles.link} max-bmd:text-md font-montreal text-sm font-medium`}
-    >
+    <button onClick={handleScroll} className={styles.link}>
       <p>{label}</p>
-      <div className={`${styles.line} h-[2px] w-full bg-dark/30`}></div>
+      <div className={styles.line}></div>
     </button>
   );
 };

@@ -11,11 +11,7 @@ const BackToTop = ({ href, label }) => {
   };
 
   return (
-    <Link
-      href={href || "#"}
-      onClick={scrollToTop}
-      className={`${styles.link} font-montreal text-xs text-gray-200`}
-    >
+    <Link href={href || "#"} onClick={scrollToTop} className={styles.link}>
       <p>{label}</p>
     </Link>
   );

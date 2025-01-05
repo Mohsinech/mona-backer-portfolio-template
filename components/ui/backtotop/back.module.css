@@ -15,6 +15,13 @@
   transform-origin: left;
 }
 
+.link {
+  font-family: "neue montreal", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #e5e7eb;
+}
+
 .link:hover .line::before {
   transform: scaleX(1);
   transform-origin: left;

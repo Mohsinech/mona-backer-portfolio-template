@@ -7,7 +7,6 @@ import QuickNav from "./navlist/QuickNav";
 import CurrentTime from "./Time/CurrentTime";
 import DataContent from "./DataContent/DataContent";
 import DropDownService from "./DropdownService/DropDownService";
-import FastMarqueeLabel from "./FastMarquee/FastMarqueeLabel";
 
 export {
   AboutUrls,
@@ -19,5 +18,4 @@ export {
   CurrentTime,
   DataContent,
   DropDownService,
-  FastMarqueeLabel,
 };
