@@ -65,19 +65,7 @@ export const DropdownData = [
   },
 ];
 
-// Fast Maruqee label
-export const FastLabels = [
-  { id: 1, label: "Say Hi" },
-  { id: 2, label: "Ready to connect" },
-  { id: 3, label: "Say Hi" },
-  { id: 4, label: "Ready to connect" },
-  { id: 5, label: "Say Hi" },
-  { id: 6, label: "Ready to connect" },
-  { id: 7, label: "Say Hi" },
-  { id: 8, label: "Ready to connect" },
-  { id: 9, label: "Say Hi" },
-  { id: 10, label: "Ready to connect" },
-];
+
 
 // About Content
 export const AboutContent = [
